@@ -25,7 +25,7 @@
     <title>البوابة الإلكترونية لمنظومة الشكاوى الحكومية الموحدة</title>
   </head>
 
-  <body dir="rtl">
+  <body dir="rtl" data-spy="scroll">
     <div class="side_menu d-none d-md-block">
       <div
         class="p-2"
@@ -394,15 +394,19 @@
               <div>
                 <button
                   type="submit"
-                  class="custom_btn custom_btn_border py-2 px-5"
-                  href="#"
+                  class="custom_btn custom_btn_border py-2 px-5 my-1"
+                  id="goToComment"
+                  href="#addComment"
                 >
                   إضافة تعليق على الشكوى
                 </button>
               </div>
             </div>
 
-            <div class="container-fluid p-3" style="background-color: #ecdeb2">
+            <div
+              class="container-fluid p-3 mb-3"
+              style="background-color: #ecdeb2"
+            >
               <div class="row mb-2">
                 <div class="col-md-3 col-sm-6 m-auto line_between">
                   <span> رقم الشكوى : </span>
@@ -441,32 +445,152 @@
               </div>
             </div>
 
-            <form id="registeration" class="needs-validation p-3" novalidate>
-              <div class="form-row my-3">
-                <div class="col-10 mb-3">
-                  <label style="color: #b67a04">
+            <div class="mb-3">
+              <p class="complain_details_txt">
+                نص الشكوى هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى
+                يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك
+                مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما
+                ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                حقيقية لتصميم الموقع. ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة
+                على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن
+                يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى
+                يتحدث عنه التصميم فيظهر بشكل لا يليق. هذا النص يمكن أن يتم
+                تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم،
+                غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+              </p>
+              <div class="d-flex justify-content-end">
+                <a
+                  type="button"
+                  id="show_all_text"
+                  style="color: #b67a04; text-decoration: underline"
+                  >عرض الشكوى كاملة</a
+                >
+              </div>
+            </div>
+            <div>
+              <h5 class="mb-2">الاجراءت المتعلقة بالشكوى</h5>
+              <p>
+                العرض التالي يمثل مجموعة الإجراءات المتخذة من الجهة المسئولة
+                مرتبة من الاحدث للأقدم
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-3 mb-3">
+                <div
+                  class="
+                    p-2
+                    h-100
+                    d-flex
+                    flex-column
+                    align-items-center
+                    justify-content-center
+                  "
+                  style="background-color: #ecdeb2"
+                >
+                  <div class="text-center" style="font-size: 1.3rem">
+                    <strong> 20 </strong>
+                  </div>
+                  <div class="text-center mb-2">
+                    2020 نوفمبر
+                    <br />
+                    05:22 مساءا
+                  </div>
+                  <div class="text-center mb-2">
+                    <span style="background-color: #f2ead2">
+                      وزارة الصحة و السكان
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <span style="background-color: #f2ead2">
+                      وزارة التعليم العالى
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-9 mb-3">
+                نص الشكوى هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى
+                يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك
+                مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما
+                ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                حقيقية لتصميم الموقع. ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة
+                على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن
+                يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى
+                يتحدث عنه التصميم فيظهر بشكل لا يليق. هذا النص يمكن أن يتم
+                تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم،
+                غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3 mb-3">
+                <div
+                  class="
+                    p-2
+                    h-100
+                    d-flex
+                    flex-column
+                    align-items-center
+                    justify-content-center
+                  "
+                  style="background-color: #ecdeb2"
+                >
+                  <div class="text-center" style="font-size: 1.3rem">
+                    <strong> 20 </strong>
+                  </div>
+                  <div class="text-center mb-2">
+                    2020 نوفمبر
+                    <br />
+                    05:22 مساءا
+                  </div>
+                  <div class="text-center mb-2">
+                    <span style="background-color: #f2ead2">
+                      وزارة الصحة و السكان
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <span style="background-color: #f2ead2">
+                      وزارة التعليم العالى
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-9 mb-3">
+                نص الشكوى هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى
+                يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك
+                مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما
+                ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                حقيقية لتصميم الموقع. ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة
+                على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن
+                يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى
+                يتحدث عنه التصميم فيظهر بشكل لا يليق. هذا النص يمكن أن يتم
+                تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم،
+                غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+              </div>
+            </div>
+            <form id="addComment" class="needs-validation p-3" novalidate>
+              <div class="form-row justify-content-center my-3">
+                <div class="col-8 mb-3">
+                  <label style="font-size: 1.2rem">
                     <span> اضافة تعليق جديد على شكوى </span>
                   </label>
-                  <input
-                    type="text"
+                  <textarea
                     class="form-control"
-                    id="neme"
-                    placeholder=" رقم الشكوى  "
-                    required
-                  />
-                  <div class="invalid-feedback">إدخل رقم الشكوى</div>
-                </div>
-                <div class="col-10 mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="neme"
+                    id="comment"
                     placeholder="تعليق  "
                     required
-                  />
-                  <div class="invalid-feedback">إدخل رقم الشكوى</div>
+                  ></textarea>
+                  <div class="invalid-feedback">إدخل تعليق</div>
                 </div>
-                <div class="col-10 mb-3">
+                <div class="col-8 mb-3">
                   <div class="form-group">
                     <!-- <label class="form-label d-block">ارفاق صورة شخصية</label> -->
                     <div class="custom-file">
@@ -489,8 +613,8 @@
                   </div>
                 </div>
               </div>
-              <div class="form-row">
-                <div class="col-10 mb-3 d-flex align-items-end">
+              <div class="form-row justify-content-center">
+                <div class="col-8 mb-3 d-flex align-items-end">
                   <button
                     type="submit"
                     class="custom_btn custom_btn_border py-2 px-5 w-100"
@@ -730,9 +854,32 @@
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/wow.min.js"></script>
-    <!-- <script>
-      $(".datepicker").datepicker();
-    </script> -->
+    <script>
+      // goToComment
+      $("#goToComment").on("click", function () {
+        var body = $("html, body");
+        body
+          .stop()
+          .animate({ scrollTop: $("#addComment").offset().top }, "500");
+      });
+      // Truncate complain text
+      var complain_details_txt = $(".complain_details_txt").text().trim();
+      if (complain_details_txt.length > 100) {
+        $(document).ready(function () {
+          console.log(complain_details_txt.length);
+          txtTruncated = complain_details_txt.slice(0, 100);
+          $(".complain_details_txt").text(txtTruncated);
+        });
+        $("#show_all_text").click(function () {
+          $(this).remove();
+          $(".complain_details_txt").text(complain_details_txt);
+        });
+      } else {
+        $(document).ready(function () {
+          $("#show_all_text").remove();
+        });
+      }
+    </script>
     <script>
       $(document).ready(function () {
         $(".fa-calendar")
